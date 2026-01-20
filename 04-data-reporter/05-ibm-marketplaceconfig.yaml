@@ -1,0 +1,14 @@
+apiVersion: marketplace.redhat.com/v1alpha1
+kind: MarketplaceConfig
+metadata:
+  name: marketplaceconfig
+  namespace: ibm-software-central
+spec:
+  features:
+    deployment: false
+    meterDefinitionCatalogServer: false
+    registration: true
+  installIBMCatalogSource: true
+  isDisconnected: false
+  license:
+    accept: true

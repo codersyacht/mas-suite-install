@@ -1,0 +1,18 @@
+apiVersion: config.mas.ibm.com/v1
+kind: JdbcCfg
+metadata:
+  name: max-jdbc-system
+  namespace: mas-max-core
+  labels:
+    mas.ibm.com/applicationId: manage
+    mas.ibm.com/configScope: workspace-application
+    mas.ibm.com/instanceId: max
+    mas.ibm.com/workspaceId: max
+spec:
+  config:
+    credentials:
+      secretName: ibm-mas-jdbc-credentials
+    sslEnabled: false
+    url: jdbc:db2://maxsystem.dev.fyre.ibm.com:50000/MAXIMO
+  displayName: Maximo Database
+  type: external

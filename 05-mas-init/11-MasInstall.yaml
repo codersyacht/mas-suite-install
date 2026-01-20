@@ -1,0 +1,18 @@
+apiVersion: core.mas.ibm.com/v1
+kind: Suite
+metadata:
+  name: max
+  labels:
+    app.kubernetes.io/instance: ibm-mas
+    app.kubernetes.io/managed-by: olm
+    app.kubernetes.io/name: ibm-mas
+    mas.ibm.com/instanceId: max
+  namespace: mas-max-core
+spec:
+  license:
+    accept: true
+  domain: maxsystem.dev.fyre.ibm.com
+  settings:
+    icr:
+      cp: cp.icr.io/cp
+      cpopen: icr.io/cpopen

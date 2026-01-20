@@ -1,0 +1,41 @@
+
+apiVersion: config.mas.ibm.com/v1
+kind: SlsCfg
+metadata:
+  name: max-sls-system
+  namespace: mas-max-core
+  labels:
+    mas.ibm.com/configScope: system
+    mas.ibm.com/instanceId: max
+spec:
+  config:
+    credentials:
+      secretName: sls-registration-key
+    url: https://sls.ibm-sls.maxsystem.dev.fyre.ibm.com
+  displayName: SLS (max)
+  certificates:
+    - alias: sls-ca
+      crt: |
+          -----BEGIN CERTIFICATE-----
+          MIIDvDCCAqSgAwIBAgIQEGHa6gkm4GaRhj/1n3jRdjANBgkqhkiG9w0BAQsFADB4
+          MQswCQYDVQQGEwJHQjEPMA0GA1UEBxMGTG9uZG9uMQ8wDQYDVQQJEwZMb25kb24x
+          LTArBgNVBAsTJElCTSBTdWl0ZSBMaWNlbnNlIFNlcnZpY2UgKEludGVybmFsKTEY
+          MBYGA1UEAxMPc2xzLnNscy5pYm0uY29tMB4XDTI1MDcxNDA5MjUxNloXDTQ1MDcw
+          OTA5MjUxNloweDELMAkGA1UEBhMCR0IxDzANBgNVBAcTBkxvbmRvbjEPMA0GA1UE
+          CRMGTG9uZG9uMS0wKwYDVQQLEyRJQk0gU3VpdGUgTGljZW5zZSBTZXJ2aWNlIChJ
+          bnRlcm5hbCkxGDAWBgNVBAMTD3Nscy5zbHMuaWJtLmNvbTCCASIwDQYJKoZIhvcN
+          AQEBBQADggEPADCCAQoCggEBAKvGYCFzOOSTWYJE4L/wlXN62YVfSnMjw6XrvMEU
+          q/w60xv74FdbE+pth2/BSoSrLSbBKacQ1WOdCZhka/n1bWu988dtqCGuV9Pqvuhi
+          JH6ITe8pWQqm9WEPCglUBxfhWFXCuFTrC+s1TVgcJQVYu6pyQWOzIJptVeMpTzFd
+          PXvu6qtndCFPTagYK15dhSCGTIRPNM+D1fvrX+oV+esYQHpkN+FF456pdb9xGv3o
+          V6duKrR8L7F/xLybbIUJaiyZiLYJ+W0r2Sss2OPM4KwdO05iY8DNrRGvGW48+pEA
+          siSjnFM/ua6hux3t7PNoEMoQP2QPCVCf4SHvLmzFqTydEhUCAwEAAaNCMEAwDgYD
+          VR0PAQH/BAQDAgIEMA8GA1UdEwEB/wQFMAMBAf8wHQYDVR0OBBYEFA/m96F1JEYg
+          DxBtH4Rxali2XKmcMA0GCSqGSIb3DQEBCwUAA4IBAQCnO9R1SVKvkTdDpy8DYcYD
+          a4WSerlpASX4raWmWuNiUwkN6UFpLdtAC9Wz14ViQT252+z4KXXvoFhiSoGUZK4E
+          jWFDBLzt6N8q0a1xNgjANHJ80bgymT6UtWihb6SJm4zeh6JMdskpQox8EOfSV+f0
+          Opm+mBGNtDTTGNu9tjKJgxtNi80FF3799lSjwvEFtG/Tk9bD3w5KpVnLHKCojFHB
+          Sf+ifVxsPrP+7CX8AZmh4VY1j1MvpscXaxiUoqp2w3ds2JqCwvGIKk+RraoxYx3w
+          3f272TQ8s9BjTyduJeRjdp8VJDpASfwaHF7zLEuxQSfqrTqcSvf+P5fvX0B4wM2d
+          -----END CERTIFICATE-----
+          

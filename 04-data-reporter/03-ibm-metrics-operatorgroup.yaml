@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: ibm-software-central-operatorgroup
+  namespace: ibm-software-central
+spec:
+  targetNamespaces:
+    - ibm-software-central
+  upgradeStrategy: Default

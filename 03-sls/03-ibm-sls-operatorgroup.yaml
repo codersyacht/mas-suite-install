@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: ibm-sls-operatorgroup
+  namespace: ibm-sls
+spec:
+  targetNamespaces:
+    - ibm-sls
+  upgradeStrategy: Default

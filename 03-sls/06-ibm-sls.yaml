@@ -1,0 +1,65 @@
+
+apiVersion: sls.ibm.com/v1
+kind: LicenseService
+metadata:
+  name: sls
+  labels:
+    app.kubernetes.io/instance: ibm-sls
+    app.kubernetes.io/managed-by: olm
+    app.kubernetes.io/name: ibm-sls
+  namespace: ibm-sls
+spec:
+  license:
+    accept: true
+  reloadCrd:
+    fileUpload: 0
+  settings:
+    auth:
+      enforce: true
+    compliance:
+      enforce: true
+    registration:
+      open: true
+    reporting:
+      maxDailyReports: 90
+      maxHourlyReports: 24
+      maxMonthlyReports: 12
+      reportGenerationPeriod: 3600
+      samplingPeriod: 900
+  domain: maxsystem.dev.fyre.ibm.com
+  mongo:
+    nodes:
+      - host: maxsystem.dev.fyre.ibm.com
+        port: 27017
+    configDb: admin
+    secretName: ibm-sls-mongo-credentials
+    authMechanism: DEFAULT
+    dbPrefix: ibm-sls_sls_
+    retryWrites: true
+    certificates:
+     - alias: mongodb
+       crt: |
+          -----BEGIN CERTIFICATE-----
+          MIIEDTCCAvWgAwIBAgIUbhJdSUi9/+J+tb3iSzjw1njRAkMwDQYJKoZIhvcNAQEL
+          BQAwgZUxCzAJBgNVBAYTAklOMQswCQYDVQQIDAJLQTELMAkGA1UEBwwCQkwxETAP
+          BgNVBAoMCFBlcnNvbmFsMREwDwYDVQQLDAhQZXJzb25hbDEhMB8GCSqGSIb3DQEJ
+          ARYSbWQuamF3YWhhckBpYm0uY29tMSMwIQYDVQQDDBptYXhzeXN0ZW0uZGV2LmZ5
+          cmUuaWJtLmNvbTAeFw0yNTA2MTgxNDAyNDNaFw0zNTA2MTYxNDAyNDNaMIGVMQsw
+          CQYDVQQGEwJJTjELMAkGA1UECAwCS0ExCzAJBgNVBAcMAkJMMREwDwYDVQQKDAhQ
+          ZXJzb25hbDERMA8GA1UECwwIUGVyc29uYWwxITAfBgkqhkiG9w0BCQEWEm1kLmph
+          d2FoYXJAaWJtLmNvbTEjMCEGA1UEAwwabWF4c3lzdGVtLmRldi5meXJlLmlibS5j
+          b20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCyQIjBCsJ7s3Z49lS5
+          PMumkHbd6UBOeM0Qd1/67pWdKW3xQcffYO++wvpkFdJzxtsq3gKycv6VVQeNDW+a
+          8VmskvEp4mzZTSQAkdtGXgs+z7FbE/22Ok+U7R14EtLzdLi+Uyo13sV/45In1Hb9
+          IMPddB2kSJu+RvQGXZehVHdrS5e6SLdrN3bq6nFZxdzgeSKcdi5sd7EJO1wYOZbY
+          OVXZQmuXe7wzj0p8vmwgT8na9AlpkmsypsGsP/EC94XXOf7VOeUAE5H3+lMTmJ2M
+          88cQeJcf+awr7jINvICjkx8I/TNWlnLbNV0wSsz3KJF6jXf5W8c//H5SC93fGwlH
+          s9SpAgMBAAGjUzBRMB0GA1UdDgQWBBTFl8vbDU/qQ1SLXT6CI9XswbPMyDAfBgNV
+          HSMEGDAWgBTFl8vbDU/qQ1SLXT6CI9XswbPMyDAPBgNVHRMBAf8EBTADAQH/MA0G
+          CSqGSIb3DQEBCwUAA4IBAQCR3C5Dn1iqhC+49sU5SUEC2zIJKftTSMYYTkopIrek
+          dun5+wS4l4QjD0zkdNTZlxzcoi/zgJgMudTnJMEyQE79hC4IrYQ4GFNV+my+dpHW
+          hiZm9hOegZn9OtloxDRdGuThzpSA4d3R8VZPKz4/6ntr6KlGbsTK0PcETYNdpog1
+          wsnqDHnkhnXJxfSZZ270QViR1iNCQzD6GvBPKiQcD7DDt1Vs1zi5VsXnD/bfMWJg
+          AYi58hR1ZlzVFd+o0c1wo6RfNeAZe0jSyU7UVnnwjkOVbZrcqn+sWoWnb/4VewVc
+          3vgPolGYGa0C3aZ+NeofL5JXvkQEx36vvtCfHij5mwis
+          -----END CERTIFICATE-----
