@@ -42,7 +42,7 @@ password: &lt;your-git-personal-access-token>&gt; <br>
 
 Refer to available catalpg [here](https://ibm-mas.github.io/cli/catalogs/)
 
-Read More about Catalog Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/01-catalog-installation.md)
+Read More about Catalog Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/01-catalog-installation.md)
 
 Navigate to mas-suite-install/01-catalogsource folder.
 
@@ -54,7 +54,7 @@ oc apply -f 01-ibm-operator-catalogsource.yaml
 
 ### Common Services Operators Installation
 
-Read More about Common Service Operator Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/02-common-services-operators-installation.md)
+Read More about Common Service Operator Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/02-common-services-operators-installation.md)
 
 Navigate to mas-suite-install/02-common-services
 
@@ -77,7 +77,7 @@ oc apply -f 04-ibm-cert-manager-operandrequest.yaml
 
 ### SLS Installation
 
-Read More about SLS Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/03-suite-license-service-installation.md)
+Read More about SLS Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/03-suite-license-service-installation.md)
 
 **Prerequisite**
 
@@ -135,7 +135,7 @@ Optional
 
 ### Data Reporter Installation
 
-Read More about Data Reporrter Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/04-mas-operator-installation.md)
+Read More about Data Reporrter Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/04-mas-operator-installation.md)
 
 Navigate to mas-suite-install/04-data-reporter.
 
@@ -171,7 +171,7 @@ Read More about MAS Operator Installation [here](https://github.ibm.com/maximo-a
 
 **Prerequisite**
 
-Ensure to obtain the sls registration key and the sls certicicate. You can follow the instruction [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/05-mas-slscfg.md) to obtain the same. There should 2 files as follows under /mas-suite-install/keyfiles directory each containing the values accordingly.
+Ensure to obtain the sls registration key and the sls certicicate. You can follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/05-mas-slscfg.md) to obtain the same. There should 2 files as follows under /mas-suite-install/keyfiles directory each containing the values accordingly.
 
 - sls-registration-key
 - sls.crt
@@ -213,7 +213,7 @@ oc apply -f 04-ibm-mas-subscription.yaml
 
 **Install MAS SlsCfg**
 
-Read More about MAS SlsCfg Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/05-mas-slscfg.md)
+Read More about MAS SlsCfg Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/05-mas-slscfg.md)
 
 Execute the following command:
 
@@ -227,7 +227,7 @@ oc apply -f 06-slsCfg.yaml
 
 **Install MAS MongoCfg**
 
-Read More about MAS MongoCfg Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/06-mas-mongocfg.md)
+Read More about MAS MongoCfg Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/06-mas-mongocfg.md)
 
 Execute the following command:
 
@@ -243,7 +243,7 @@ oc apply -f 08-MongoCfg.yaml
 
 This segment should only be executed if prerequisite ii was done. Otherwise this section can be skipped. But this has to be executed before installing mas manage.
 
-Read More about MAS JdbcCfg Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/07-mas-jdbc.md)
+Read More about MAS JdbcCfg Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/07-mas-jdbc.md)
 
 Execute the following command:
 
