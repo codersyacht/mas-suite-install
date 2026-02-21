@@ -17,8 +17,8 @@ This document illustrates Operator Hub based installation of Maximo Application 
 (ii) This is optional.  DB2 has to be installed mandatorily before mas manage installation. This is not required for mas suite/core. Follow the instructions below to install Db2. <br>
 
 [Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/setup.md) <br>
-[Create DB](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/db2/02-Create-DB.md) <br>
-[Configure TableSpace](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/db2/03-Create-Tablespace.md) <br>
+[Create Dstabase](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/create-db.md) <br>
+[Configure Database](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/configuration.md) <br>
 
 (iii) OpenShift has to be installated. If no installed, follow the instructions below to install OpenShift Local. <br>
 
