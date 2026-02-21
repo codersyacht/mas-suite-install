@@ -4,8 +4,7 @@
 
 This document illustrates Operator Hub based installation of Maximo Application Suite including manual installation of all the integration components.
 
-<img width="1288" alt="image" src="https://github.ibm.com/maximo-application-suite/mas-suite-install/assets/438149/972b26d4-6a98-4fb1-a6b0-f38da70277d9">
-
+<img width="2576" height="1256" alt="image" src="https://github.com/user-attachments/assets/ccfa577e-661b-463c-be8f-8d961200c6e4" />
 
 **Prerequisite:**
 
