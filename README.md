@@ -26,12 +26,11 @@ This document illustrates Operator Hub based installation of Maximo Application 
 
 ### Cloning this Git Repository.
 
-Create a git account here: https://github.ibm.com
-
+Create a git account [here](https://github.com/)
 Clone this repository to begin installation.
 
 ```CMD
-git clone https://github.ibm.com/maximo-application-suite/mas-suite-install
+git clone https://github.com/codersyacht/mas-suite-install
 ```
 username: &lt;your-git-account-userid>&gt; <br>
 password: &lt;your-git-personal-access-token>&gt; <br>
