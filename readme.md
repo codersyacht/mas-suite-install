@@ -22,7 +22,7 @@ This document illustrates Operator Hub based installation of Maximo Application 
 
 (iii) OpenShift has to be installated. If no installed, follow the instructions below to install OpenShift Local. <br>
 
-[OpenShift Local Install](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/openshift/OpenShift_Install.md) <br>
+[OpenShift Local Install](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/openshift/installation.md) <br>
 
 ### Cloning this Git Repository.
 
