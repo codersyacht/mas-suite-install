@@ -17,9 +17,9 @@ Check disk capacity [here](https://github.com/codersyacht/maximo-knowledge-cente
 
 (i) MongoDB has to be installed. If not follow the instructions below to install MongoDB.<br>
 
-[Mongo Install](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/mongo/Mongo-Install.md) <br>
-[Mongo User Configure](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/mongo/Mongo-User-Creation.md) <br>
-[Mongo TLS Configure](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/mongo/Mongo-Enable-SSL-TLS.md) <br>
+[Mongo Install](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/installation.md) <br>
+[Mongo User Configure](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/user.md) <br>
+[Mongo TLS Configure](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/tls-configuration.md) <br>
 
 (ii) This is optional.  DB2 has to be installed mandatorily before mas manage installation. This is not required for mas suite/core. Follow the instructions below to install Db2. <br>
 
