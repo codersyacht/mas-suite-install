@@ -13,6 +13,6 @@ spec:
     credentials:
       secretName: ibm-mas-jdbc-credentials
     sslEnabled: false
-    url: jdbc:db2://maxsystem.dev.fyre.ibm.com:50000/MAXIMO
+    url: jdbc:db2://codehub1.fyre.ibm.com:50000/MAXIMO
   displayName: Maximo Database
   type: external

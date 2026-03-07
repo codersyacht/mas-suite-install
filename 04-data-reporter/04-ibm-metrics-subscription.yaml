@@ -9,4 +9,4 @@ spec:
   name: ibm-metrics-operator
   source: certified-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: ibm-metrics-operator.v2.23.1
+  startingCSV: ibm-metrics-operator.v2.24.0

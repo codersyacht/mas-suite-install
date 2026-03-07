@@ -11,7 +11,7 @@ metadata:
 spec:
   license:
     accept: true
-  domain: maxsystem.dev.fyre.ibm.com
+  domain: codehub1.fyre.ibm.com
   settings:
     icr:
       cp: cp.icr.io/cp

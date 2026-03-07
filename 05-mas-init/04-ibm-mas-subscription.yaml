@@ -4,11 +4,11 @@ metadata:
   name: ibm-mas
   namespace: mas-max-core
 spec:
-  channel: 9.1.x 
+  channel: 9.2.x-feature 
   installPlanApproval: Automatic
   name: ibm-mas
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
-  startingCSV: ibm-mas.v9.1.7
+  startingCSV: ibm-mas.v9.2.0-pre.stable-9887
   config:
     installModeType: OwnNamespace

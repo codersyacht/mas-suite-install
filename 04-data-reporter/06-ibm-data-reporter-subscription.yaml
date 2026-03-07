@@ -9,4 +9,4 @@ spec:
   name: ibm-data-reporter-operator
   source: certified-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: ibm-data-reporter-operator.v2.23.1
+  startingCSV: ibm-data-reporter-operator.v2.24.0
