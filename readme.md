@@ -8,6 +8,13 @@ This document illustrates Operator Hub based installation of Maximo Application 
 
 **Prerequisite:**
 
+Hardware:<br>
+CPU: 16 Core <br>
+Memory: 64 GB Ram <br>
+Disk: 1000 GB <br>
+
+Check disk capacity [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/disk-operations.md)
+
 (i) MongoDB has to be installed. If not follow the instructions below to install MongoDB.<br>
 
 [Mongo Install](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/mongo/Mongo-Install.md) <br>
