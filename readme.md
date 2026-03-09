@@ -262,7 +262,7 @@ oc apply -f 10-JdbcCfg.yaml
 
 **Maximo Application Suite Core Installation**
 
-Read More about Maximo Application Suite Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/08-mas-install.md)
+Read More about Maximo Application Suite Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/08-mas-install.md)
 
 Execute the following commands:
 
