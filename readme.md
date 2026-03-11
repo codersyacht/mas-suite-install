@@ -13,11 +13,11 @@ CPU: 16 Core <br>
 Memory: 64 GB Ram <br>
 Disk: 1000 GB <br>
 
-Check disk capacity [here](codersyacht/maximo-knowledge-center/blob/main/devops/mongo/installation.md)
+Check disk capacity [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/installation.md)
 
 (i) MongoDB has to be installed. If not follow the instructions below to install MongoDB.<br>
 
-[Mongo Install](codersyacht/maximo-knowledge-center/blob/main/devops/mongo/installation.md) <br>
+[Mongo Install](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/installation.md) <br>
 [Mongo User Configure](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/user.md) <br>
 [Mongo TLS Configure](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/tls-configuration.md) <br>
 
