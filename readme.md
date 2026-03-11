@@ -13,7 +13,7 @@ CPU: 16 Core <br>
 Memory: 64 GB Ram <br>
 Disk: 1000 GB <br>
 
-Check disk capacity [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/system/disk-operations.md)
+Check disk capacity [here](/maximo-knowledge-center/blob/main/devops/mongo/installation.md)
 
 (i) MongoDB has to be installed. If not follow the instructions below to install MongoDB.<br>
 
