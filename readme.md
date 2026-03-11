@@ -17,7 +17,7 @@ Check disk capacity [here](/maximo-knowledge-center/blob/main/devops/mongo/insta
 
 (i) MongoDB has to be installed. If not follow the instructions below to install MongoDB.<br>
 
-[Mongo Install](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/installation.md) <br>
+[Mongo Install](/maximo-knowledge-center/blob/main/devops/mongo/installation.md) <br>
 [Mongo User Configure](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/user.md) <br>
 [Mongo TLS Configure](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/tls-configuration.md) <br>
 
