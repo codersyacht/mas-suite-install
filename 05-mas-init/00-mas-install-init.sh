@@ -21,18 +21,21 @@ indentation="          "
 sed "s/^/$indentation/" "../keyfiles/sls.crt" >> "06-sls-cfg.yaml"
 
 
-printf '%s\n' '/host: /' d i '      - host: '${host_name} . w q | ed -s 08-MongoCfg.yaml
+printf '%s\n' '/host: /' d i '      - host: '${host_name} . w q | ed -s 08-mongo-cfg.yaml
 
-ed -s "08-MongoCfg.yaml" <<EOF
+ed -s "08-mongo-cfg.yaml" <<EOF
 g/          -----BEGIN CERTIFICATE-----/.,\$d
 w
 q
 EOF
 
 indentation="          " 
-sed "s/^/$indentation/" "../keyfiles/mongo.crt" >> "08-MongoCfg.yaml"
+sed "s/^/$indentation/" "../keyfiles/mongo.crt" >> "08-mongo-cfg.yaml"
 
 
-printf '%s\n' '/url: /' d i '    url: jdbc:db2://'${host_name}':50000/MAXIMO' . w q | ed -s 10-JdbcCfg.yaml
+printf '%s\n' '/url: /' d i '    url: jdbc:db2://'${host_name}':50000/MAXIMO' . w q | ed -s 10-jdbc-cfg-db2.yaml
 
-printf '%s\n' '/domain: /' d i '  domain: '${host_name} . w q | ed -s 11-MasInstall.yaml
+printf '%s\n' '/url: /' d i '    url: jdbc:oracle:thin:@'${host_name}':1521/MAXIMO' . w q | ed -s 10-jdbc-cfg-oracle.yaml
+
+
+printf '%s\n' '/domain: /' d i '  domain: '${host_name} . w q | ed -s 11-masinstall.yaml
