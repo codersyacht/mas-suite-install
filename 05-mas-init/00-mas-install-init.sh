@@ -9,16 +9,16 @@ oc get LicenseService sls -n ibm-sls  -o jsonpath="{.status.registrationKey}" > 
 
 echo "Registration key copied"
 
-printf '%s\n' '/url: /' d i '    url: https://sls.ibm-sls.'${host_name} . w q | ed -s 06-slsCfg.yaml
+printf '%s\n' '/url: /' d i '    url: https://sls.ibm-sls.'${host_name} . w q | ed -s 06-sls-cfg.yaml
 
-ed -s "06-slsCfg.yaml" <<EOF
+ed -s "06-sls-cfg.yaml" <<EOF
 g/          -----BEGIN CERTIFICATE-----/.,\$d
 w
 q
 EOF
 
 indentation="          " 
-sed "s/^/$indentation/" "../keyfiles/sls.crt" >> "06-slsCfg.yaml"
+sed "s/^/$indentation/" "../keyfiles/sls.crt" >> "06-sls-cfg.yaml"
 
 
 printf '%s\n' '/host: /' d i '      - host: '${host_name} . w q | ed -s 08-MongoCfg.yaml
