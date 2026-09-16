@@ -12,7 +12,7 @@ spec:
     credentials:
       secretName: ibm-mas-mongo-credentials
     hosts:
-      - host: codehub1.fyre.ibm.com
+      - host: codehub.dev.fyre.ibm.com
         port: 27017
     authMechanism: DEFAULT
     configDb: admin
@@ -23,26 +23,26 @@ spec:
     - alias: mongodb
       crt: |
           -----BEGIN CERTIFICATE-----
-          MIIEAzCCAuugAwIBAgIUEw310oB941gNjhJzPeaH8qagrrUwDQYJKoZIhvcNAQEL
-          BQAwgZAxCzAJBgNVBAYTAklOMQswCQYDVQQIDAJLQTELMAkGA1UEBwwCQkwxETAP
+          MIIECTCCAvGgAwIBAgIUGkOZhH6r/HB15yq/V2Sv6e52NUIwDQYJKoZIhvcNAQEL
+          BQAwgZMxCzAJBgNVBAYTAklOMQswCQYDVQQIDAJLQTELMAkGA1UEBwwCQkwxETAP
           BgNVBAoMCFBlcnNvbmFsMREwDwYDVQQLDAhQZXJzb25hbDEhMB8GCSqGSIb3DQEJ
-          ARYSbWQuamF3YWhhckBpYm0uY29tMR4wHAYDVQQDDBVjb2RlaHViMS5meXJlLmli
-          bS5jb20wHhcNMjYwMzA4MDczNjUwWhcNMzYwMzA1MDczNjUwWjCBkDELMAkGA1UE
-          BhMCSU4xCzAJBgNVBAgMAktBMQswCQYDVQQHDAJCTDERMA8GA1UECgwIUGVyc29u
-          YWwxETAPBgNVBAsMCFBlcnNvbmFsMSEwHwYJKoZIhvcNAQkBFhJtZC5qYXdhaGFy
-          QGlibS5jb20xHjAcBgNVBAMMFWNvZGVodWIxLmZ5cmUuaWJtLmNvbTCCASIwDQYJ
-          KoZIhvcNAQEBBQADggEPADCCAQoCggEBALVhtmmYxZRvmJDjgyZSMnib1IuDDp/Y
-          HFjvIOxpfC2AJ3WG6Vh/8as9+0i0876J5N7C8ue7DoxI1qb05qzI7klvA8sN8IIK
-          2hfJHvwFs33HhUdJY8ZSOXjPscvdgwTMGaJImnYUTqZBT4AlmI/vdqYo46X2615p
-          gjucFC2hg2sNccVF5fWrotmLZ80sAOID+WIrzWvwnddx2+8fwqaUAZiJueTDV0ke
-          sVvSgeEkXj3pWdgDJWZsDyw4UFe92In7jrOR174FV8ZR0hTQvNZQy83QDngGhVar
-          G3mDFtYi/whNG4XFaGewe6Im3acQo0NcOkZMoypx44ZHQUAzP1gELpkCAwEAAaNT
-          MFEwHQYDVR0OBBYEFOu/uT9Ic4I/xrWtYcw6In0qG+aQMB8GA1UdIwQYMBaAFOu/
-          uT9Ic4I/xrWtYcw6In0qG+aQMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQEL
-          BQADggEBAHbe7oyQ7b2GkBb5rclyFRfWR0BeXQuzYa2chkeq3W04i1b5PBYKUrDP
-          PxAyCDcLIaZzZYAGoPfz1wKOQ0MSSFNzhebSB+J0q3xdPDPZfk8N0I/VXj7eXnhT
-          KtwwUiofsBHtontOt++Wx7yVO1t+1ZUI+9d7eOSqP3bxforp0cyqnJzTettIeWJ4
-          FtJ3bRUMjz1h4bmTkZaoaNYQZX1S+oKuBibnaD912jiyKrSHUnqPpD8nTFRRcop6
-          pyG4NLx/aTxyksYGJj0vSZa+f1+6/PeBMhcSyYBHQPgDRtAzw6c56dh+PoBzZ8Gs
-          Mv/5oPCLm1GOuSWF+8C8GH1XJLDRJfE=
+          ARYSbWQuamF3YWhhckBpYm0uY29tMSEwHwYDVQQDDBhjb2RlaHViLmRldi5meXJl
+          LmlibS5jb20wHhcNMjYwNzI2MDkxNjUwWhcNMzYwNzIzMDkxNjUwWjCBkzELMAkG
+          A1UEBhMCSU4xCzAJBgNVBAgMAktBMQswCQYDVQQHDAJCTDERMA8GA1UECgwIUGVy
+          c29uYWwxETAPBgNVBAsMCFBlcnNvbmFsMSEwHwYJKoZIhvcNAQkBFhJtZC5qYXdh
+          aGFyQGlibS5jb20xITAfBgNVBAMMGGNvZGVodWIuZGV2LmZ5cmUuaWJtLmNvbTCC
+          ASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAL3OwNIacKt8TnDnHLpeo9Hm
+          NLZCAylltAsB1NavuXvSKLWwiXYd9y1csqKGy8RyoFEwZWmYrejsV8ReDcXSBs/0
+          dDjlYjCk6eQCqcuo0nZba3ZqQLyESmi+TwllH0rc8wTzxPjs8jSsF1HyzB0QDAN3
+          aSFzRoJ6hkwdJKgq3n7w0DOwraT0q4XnDJnQmsum+kpMAarLFfcbslPw2Tdvjg34
+          0uu5z1vFXUpVrUtGrf210KwcqhXORJhlbe6MLk8a2U0Ct8vqBxyQLWtX0Z923/Fu
+          Ninmku+W4uSv//BIzS1BQUe9k8ukz6mRt9Tjrho/xrF+QopaZQV1NqwdHo08UtEC
+          AwEAAaNTMFEwHQYDVR0OBBYEFJSUaE1sY8p34Qq5DTfrsFp0skIwMB8GA1UdIwQY
+          MBaAFJSUaE1sY8p34Qq5DTfrsFp0skIwMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZI
+          hvcNAQELBQADggEBAG/J68JeLEDmi8/PIcjHIoEE+B+Xi66Rz7rtnGXBHx5zqEZ/
+          iDgX6TRIC7CUIiOUZFRMHAj5h1uZIPWf4PR1sQhXuN4ndT7R2DLUuIQ+EIUw2UJK
+          E5kw+QmDMlsuIthVBPF2gGkoFTrYg9PTiun4UEWOBqrKonXD/GoYj99sTlMHH1Lk
+          M7u94N09gl4xiXM4U8XD6OWjvmlxS7SJQrDRR39wBc6EDg4QfDPZfFWykkKDqQuK
+          VsnHjDYgx3Lt0MmRR5iIC0FvA7LRicAO/KK9Orl/T5rVgTe4UaISrOLz4uRXkTz5
+          F5ENrIsTYpQVGCrUZLDijuCUyINHvm2+xyfybi4=
           -----END CERTIFICATE-----

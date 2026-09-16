@@ -1,0 +1,42 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: mas:max:core:entitymgr-suite
+rules:
+  - apiGroups:
+      - cert-manager.io
+    resources:
+      - clusterissuers
+      - issuers
+      - certificates
+    verbs:
+      - get
+      - watch
+      - list
+      - create
+      - update
+      - patch
+      - delete
+  - apiGroups:
+      - ''
+    resources:
+      - secrets
+    verbs:
+      - get
+      - list
+      - update
+      - patch
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: mas:max:core:entitymgr-suite
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: mas:max:core:entitymgr-suite
+subjects:
+  - kind: ServiceAccount
+    name: ibm-mas-entitymgr-suite
+    namespace: mas-max-core

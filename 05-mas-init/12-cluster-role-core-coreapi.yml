@@ -1,0 +1,132 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: mas:max:core:coreapi
+rules:
+  # Essential Permissions: Ability to manage configmap/Secrets
+  - apiGroups:
+      - ""
+    resources:
+      - configmaps
+      - secrets
+    verbs:
+      - get
+      - update
+      - create
+      - delete
+      - patch
+
+  # Non-Essential Permissions: Ability to manage projects
+  - apiGroups:
+      - project.openshift.io
+    resources:
+      - projects
+    verbs:
+      - create
+      - get
+
+  # Non-Essential Permissions: Ability to get deployments
+  - apiGroups:
+      - apps
+    resources:
+      - deployments
+    verbs:
+      - get
+
+  # Non-Essential Permissions: Ability to install an operator in the namespace
+  - apiGroups:
+      - operators.coreos.com
+    resources:
+      - installplans
+      - operatorgroups
+      - subscriptions
+    verbs:
+      - get
+      - list
+      - create
+      - patch
+
+  # Non-Essential Permissions: Ability to manage IoT CRs
+  - apiGroups:
+      - iot.ibm.com
+    resources:
+      - iots
+      - iotworkspaces
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+
+  # Non-Essential Permissions: Ability to get, create, and modify MAS applications
+  - apiGroups:
+      - apps.mas.ibm.com
+    resources:
+      # Assist
+      - assistapps
+      - assistworkspaces
+      # Health
+      - healthapps
+      - healthworkspaces
+      # Manage
+      - manageapps
+      - manageworkspaces
+      # Monitor
+      - monitorapps
+      - monitorworkspaces
+      # Optimizer
+      - optimizerapps
+      - optimizerworkspaces
+      # Predict
+      - predictapps
+      - predictworkspaces
+      # Facilities
+      - facilitiesapps
+      - facilitiesworkspaces
+      # Visual Inspection
+      - visualinspectionapps
+      - visualinspectionappworkspaces
+      # Safety
+      - safetyapps
+      - safetyworkspaces
+      # HP Utilities
+      - hputilitiesapps
+      - hputilitiesworkspaces
+    verbs:
+      - get
+      - create
+      - patch
+      - delete
+  
+  # Non-Essential Permissions: Ability to read PackageManifests to see which versions of MAS are available in the catalog
+  - apiGroups:
+      - packages.operators.coreos.com
+    resources:
+      - packagemanifests
+    verbs:
+      - get
+
+  # Non-Essential Permissions: Ability to retrieve catalogsource information to install an application
+  - apiGroups:
+      - operators.coreos.com
+    resources:
+      - catalogsources
+    verbs:
+      - get
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: mas:max:core:coreapi
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: mas:max:core:coreapi
+subjects:
+  - kind: ServiceAccount
+    name: ibm-mas-coreapi
+    namespace: mas-max-core

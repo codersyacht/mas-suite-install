@@ -11,7 +11,12 @@ metadata:
 spec:
   license:
     accept: true
-  domain: codehub1.fyre.ibm.com
+  domain: codehub.dev.fyre.ibm.com
+  certManagerNamespace: cert-manager
+  certificateIssuer:
+    name: mas-cert-issuer
+    duration: 876000h
+    renewBefore: 8760h
   settings:
     icr:
       cp: cp.icr.io/cp

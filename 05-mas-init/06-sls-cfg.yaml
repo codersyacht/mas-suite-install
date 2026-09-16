@@ -11,30 +11,31 @@ spec:
   config:
     credentials:
       secretName: sls-registration-key
-    url: https://sls.ibm-sls.codehub1.fyre.ibm.com
+    url: https://sls.ibm-sls.codehub.dev.fyre.ibm.com
   displayName: SLS (max)
   certificates:
     - alias: sls-ca
       crt: |
           -----BEGIN CERTIFICATE-----
-          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
+          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
+          kceBlw==
           -----END CERTIFICATE-----

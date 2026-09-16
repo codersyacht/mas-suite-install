@@ -1,0 +1,36 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: mas:max:core:internalapi
+rules:
+
+  - apiGroups:
+      - apps
+    resources:
+      - deployments
+    verbs:
+      - get
+
+  - apiGroups:
+      - operators.coreos.com
+    resources:
+      - subscriptions
+    verbs:
+      - get
+      - list
+
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: mas:max:core:internalapi
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: mas:max:core:internalapi
+subjects:
+  - kind: ServiceAccount
+    name: ibm-mas-internalapi
+    namespace: mas-max-core
