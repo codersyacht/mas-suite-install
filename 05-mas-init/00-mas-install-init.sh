@@ -38,4 +38,4 @@ printf '%s\n' '/url: /' d i '    url: jdbc:db2://'${host_name}':50000/MAXIMO' . 
 printf '%s\n' '/url: /' d i '    url: jdbc:oracle:thin:@'${host_name}':1521/MAXIMO' . w q | ed -s 10-jdbc-cfg-oracle.yaml
 
 
-printf '%s\n' '/domain: /' d i '  domain: '${host_name} . w q | ed -s 11-masinstall.yaml
+printf '%s\n' '/domain: /' d i '  domain: '${host_name} . w q | ed -s 15-masinstall.yaml
