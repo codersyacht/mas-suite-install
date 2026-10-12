@@ -9,6 +9,6 @@ spec:
   name: ibm-mas
   source: ibm-operator-catalog
   sourceNamespace: openshift-marketplace
-  startingCSV: ibm-mas.v9.2.3
+  startingCSV: ibm-mas.v9.2.7
   config:
     installModeType: OwnNamespace
