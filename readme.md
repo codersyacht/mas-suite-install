@@ -184,7 +184,7 @@ If Mongodb is installed using the reference installation documentation mentioned
 Execute the following commands:
 
 ```CMD
-00-ibm-sls-install-init.sh
+./00-ibm-sls-install-init.sh
 ```
 
 **SLS Operator Installation**
