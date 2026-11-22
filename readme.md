@@ -189,6 +189,8 @@ Execute the following commands:
 ```CMD
 oc apply -f 03-ibm-sls-operatorgroup.yaml
 ```
+**Note:** 
+Edit the 04-ibm-sls-subscription.yaml file so the the right version is selected. 
 
 ```CMD
 oc apply -f 04-ibm-sls-subscription.yaml
@@ -202,12 +204,6 @@ oc apply -f 04-ibm-sls-subscription.yaml
 
 ```CMD
 oc apply -f 06-ibm-sls.yaml
-```
-
-Optional
-
-```CMD
-./07-patch-sls-startupprobe.sh
 ```
 
 
