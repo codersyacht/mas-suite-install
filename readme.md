@@ -115,6 +115,11 @@ git clone https://github.com/codersyacht/mas-suite-install
 username: &lt;your-git-account-userid>&gt; <br>
 password: &lt;your-git-personal-access-token>&gt; <br>
 
+## Prerequisite Understanding
+
+-All the **Read More about** is only to understand more about the files being executed. There is no need to create sh or yaml files. All required files are made available in the repository.
+-All the 00 files are for dynamic preparation of the yaml files.
+-Place the the ibm entitlement key in the folder keyfiles/ibm-entitlement-key. Otherwise installation will fail.
 
 ### Catalog Installation
 
