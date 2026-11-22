@@ -228,6 +228,7 @@ oc apply -f 03-ibm-metrics-operatorgroup.yaml
 ```
 
 **Note:**
+
 Edit the version in the 04-ibm-metrics-subscription.yaml & 04-ibm-metrics-subscription.yaml acordingly. The version here is v2.24.11.
 
 ```CMD
@@ -260,7 +261,7 @@ Note thr MongoDB user name and password. <br>
 Note the Db2 user name and password. <br>
 
 
-Navigate to mas-suite-install/04-mas-init
+Navigate to mas-suite-install/05-mas-init
 
 **Setup Initialization**
 
@@ -325,14 +326,27 @@ This segment should only be executed if prerequisite ii was done. Otherwise this
 
 Read More about MAS JdbcCfg Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/07-mas-jdbc.md)
 
-Execute the following command:
+Execute the following command for Oracle:
+
+**Oracle**
 
 ```CMD
-./09-ibm-mas-jdbc-credentials.sh
+./09-ibm-mas-jdbc-credentials-oracle.sh
 ```
 
 ```CMD
-oc apply -f 10-JdbcCfg.yaml
+oc apply -f 10-jdbc-cfg-oracle.yaml
+```
+Execute the following command for DB2:
+
+**DB2**
+
+```CMD
+./09-ibm-mas-jdbc-credentials-db2.sh
+```
+
+```CMD
+oc apply -f 10-jdbc-cfg-db2.yaml
 ```
 
 **Cluster Role Settings**
