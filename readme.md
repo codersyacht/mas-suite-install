@@ -227,6 +227,9 @@ Execute the following commands:
 oc apply -f 03-ibm-metrics-operatorgroup.yaml
 ```
 
+**Note:**
+Edit the version in the 04-ibm-metrics-subscription.yaml & 04-ibm-metrics-subscription.yaml acordingly. The version here is v2.24.11.
+
 ```CMD
 oc apply -f 04-ibm-metrics-subscription.yaml
 ```
@@ -236,7 +239,7 @@ oc apply -f 05-ibm-marketplaceconfig.yaml
 ```
 
 ```CMD
-oc apply -f 06-ibm-data-reporter-subscription.yaml
+oc apply -f 04-ibm-metrics-subscription.yaml.yaml
 ```
 
 ### Maximo Application Suite Installation
@@ -280,6 +283,9 @@ Execute the following commands.
 ```CMD
 oc apply -f 03-ibm-mas-operatorgroup.yaml
 ```
+
+**Note:**
+Update the 04-ibm-mas-subscription.yaml to use the appropriate version. The version used here is v9.2.10.
 
 ```CMD
 oc apply -f 04-ibm-mas-subscription.yaml
