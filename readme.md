@@ -126,7 +126,7 @@ Refer to available catalpg [here](https://ibm-mas.github.io/cli/catalogs/)
 
 Read More about Catalog Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/01-catalog-installation.md)
 
-Navigate to mas-suite-install/01-catalogsource folder.
+Navigate to mas-suite-install/01-catalog-source folder.
 
 **Note:**
 Edit the 01-ibm-operator-catalogsource.yaml file so the the right catalog is selected. The catalog used here is _v9-261105_.
