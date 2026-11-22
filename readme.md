@@ -62,6 +62,13 @@ flowchart LR
 
     classDef box fill:#aac8e8,stroke:#5b9bd5,color:#000
     class Core,JdbcCfg,MongoCfg,SlsCfg,BasCfg,KafkaCfg,IdpCfg,Manage,SLS,Reporter,DB2,MongoDB,Storage,KafkaDB,Idp box
+
+    %% Panel colors to match the original
+    style MAS fill:#ffffff,stroke:#16232e,stroke-width:3px,color:#000
+    style CORE fill:#e8e8e8,stroke:#e8e8e8,color:#000
+    style MNG fill:#e8e8e8,stroke:#e8e8e8,color:#000
+    style SVC fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray:2 4,color:#000
+    style EXT fill:#ffffff,stroke:#000000,stroke-width:2px,stroke-dasharray:2 4,color:#000
 ```
 
 **Prerequisite:**
