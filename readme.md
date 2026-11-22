@@ -88,7 +88,13 @@ Check disk capacity [here](https://github.com/codersyacht/maximo-knowledge-cente
 [Mongo User Configure](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/user.md) <br>
 [Mongo TLS Configure](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/mongo/tls-configuration.md) <br>
 
-(ii) This is optional.  DB2 has to be installed mandatorily before mas manage installation. This is not required for mas suite/core. Follow the instructions below to install Db2. <br>
+(ii) This is optional.  Oracle or DB2 has to be installed mandatorily before Maximo manage installation. This is not required for MAS suite/core. Follow the instructions below to install Oracle OR Db2. <br>
+
+**Oracle**
+
+[Setup] (https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/oracle/setup.md)
+
+**DB2**
 
 [Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/setup.md) <br>
 [Create Dstabase](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/db2/create-db.md) <br>
