@@ -190,7 +190,7 @@ Execute the following commands:
 oc apply -f 03-ibm-sls-operatorgroup.yaml
 ```
 **Note:** 
-Edit the 04-ibm-sls-subscription.yaml file so the the right version is selected. 
+Edit the 04-ibm-sls-subscription.yaml file so the the right version is selected. Version used here is ibm-sls.v3.13.3.
 
 ```CMD
 oc apply -f 04-ibm-sls-subscription.yaml
