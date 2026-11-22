@@ -92,7 +92,7 @@ Check disk capacity [here](https://github.com/codersyacht/maximo-knowledge-cente
 
 **Oracle**
 
-[Setup] (https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/oracle/setup.md)
+[Setup](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/oracle/setup.md)
 
 **DB2**
 
