@@ -45,7 +45,9 @@ flowchart LR
     Core --> BasCfg
     Core --> KafkaCfg
     Core --> IdpCfg
-    Core <--> Manage
+
+    %% Manage <-> whole Core namespace (green)
+    CORE <--> MNG
 
     %% Config -> backing system (orange)
     JdbcCfg --> DB2
