@@ -4,7 +4,65 @@
 
 This document illustrates Operator Hub based installation of Maximo Application Suite including manual installation of all the integration components.
 
-<img width="2576" height="1256" alt="image" src="https://github.com/user-attachments/assets/ccfa577e-661b-463c-be8f-8d961200c6e4" />
+```mermaid
+flowchart LR
+    subgraph MAS["MAS cluster"]
+        direction TB
+        subgraph CORE["Core namespace"]
+            direction TB
+            Core[MAS Core]
+            JdbcCfg[JdbcCfg]
+            MongoCfg[MongoCfg]
+            SlsCfg[SlsCfg]
+            BasCfg[BasCfg]
+            KafkaCfg[KafkaCfg]
+            IdpCfg[IdpCfg]
+        end
+        subgraph MNG["Manage namespace"]
+            Manage[MAS Manage]
+        end
+    end
+
+    subgraph SVC["Services"]
+        direction TB
+        SLS[SLS Service]
+        Reporter["Metric / Data Reporter"]
+    end
+
+    subgraph EXT["External systems"]
+        direction TB
+        DB2[(DB2)]
+        MongoDB[(MongoDB)]
+        Storage[(Storage)]
+        KafkaDB[(Kafka)]
+        Idp[(Idp)]
+    end
+
+    %% Core owns the config CRs (green)
+    Core --> JdbcCfg
+    Core --> MongoCfg
+    Core --> SlsCfg
+    Core --> BasCfg
+    Core --> KafkaCfg
+    Core --> IdpCfg
+    Core <--> Manage
+
+    %% Config -> backing system (orange)
+    JdbcCfg --> DB2
+    MongoCfg --> MongoDB
+    SlsCfg --> SLS
+    SLS --> MongoDB
+    BasCfg --> Reporter
+    Reporter --> Storage
+    KafkaCfg --> KafkaDB
+    IdpCfg --> Idp
+
+    linkStyle 0,1,2,3,4,5,6 stroke:#6aa84f,stroke-width:2px
+    linkStyle 7,8,9,10,11,12,13,14 stroke:#e07b39,stroke-width:2px
+
+    classDef box fill:#aac8e8,stroke:#5b9bd5,color:#000
+    class Core,JdbcCfg,MongoCfg,SlsCfg,BasCfg,KafkaCfg,IdpCfg,Manage,SLS,Reporter,DB2,MongoDB,Storage,KafkaDB,Idp box
+```
 
 **Prerequisite:**
 
