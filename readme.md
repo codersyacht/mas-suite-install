@@ -331,7 +331,7 @@ Execute the following command:
 ```
 
 ```CMD
-oc apply -f 06-slsCfg.yaml
+oc apply -f 06-sls-cfg.yaml
 ```
 
 **Install MAS MongoCfg**
@@ -345,7 +345,7 @@ Execute the following command:
 ```
 
 ```CMD
-oc apply -f 08-MongoCfg.yaml
+oc apply -f 08-mongo-cfg.yaml
 ```
 
 **Install MAS JdbcCfg**
