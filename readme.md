@@ -124,6 +124,9 @@ Read More about Catalog Installation [here](https://github.com/codersyacht/maxim
 
 Navigate to mas-suite-install/01-catalogsource folder.
 
+**Note:**
+Edit the 01-ibm-operator-catalogsource.yaml file so the the right catalog is selected. The catalog used here is v9-261105.
+
 Execute the following command:
 
 ```CMD
