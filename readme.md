@@ -164,9 +164,15 @@ Read More about SLS Installation [here](https://github.com/codersyacht/maximo-kn
 
 **Prerequisite**
 
+If Mongodb is installed using the reference installation documentation mentioned here and if the installation path and the certificate path are exactly same, executing the 00-ibm-sls-install-init.sh file will take care of the following. Otherwise, the following steps has to be executed.
+
+**IBM Entitlement Key**
+
 Create IBM Entitlement Key [here](https://myibm.ibm.com/products-services/containerlibrary) if you do not have an ibm entitlement key. <br>
 
 Update the /keyfiles/ibm-entitlement-key with the IBM entitlement key before executing the below commands.
+
+**Mongo Certificate**
 
 Ensure to copy the mongoDB certificate to a new file named mongo.crt under /keyfiles/. (./keyfiles/mongo.crt). Replace if it exists. Read more about Mongo security [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/mongo/Mongo-Enable-SSL-TLS.md) <br>
 Note thr MongoDB user name and password. <br>
@@ -174,6 +180,9 @@ Note thr MongoDB user name and password. <br>
 Navigate to mas-suite-install/03-sls directory.
 
 **Setup Initialization**
+
+**Note:**
+If Mongodb is installed using the reference installation documentation mentioned here and if the installation path and the certificate path are exactly same, executing the 00-ibm-sls-install-init.sh file will take care of updating the yaml file with the right certificate. If this manually performed the following 00-ibm-sls-install-init.sh need not be executed.
 
 Execute the following commands:
 
@@ -207,10 +216,12 @@ oc apply -f 04-ibm-sls-subscription.yaml
 ./05-ibm-sls-mongo-credentials.sh
 ```
 
+**Note:**
+Ensure the right mongodb certificate and the hostname is rightly used in 06-ibm-sls.yaml.
+
 ```CMD
 oc apply -f 06-ibm-sls.yaml
 ```
-
 
 ### Data Reporter Installation
 
@@ -254,12 +265,18 @@ Read More about MAS Operator Installation [here](https://github.com/codersyacht/
 
 **Prerequisite**
 
+The following need to performed if Mongodb and database are not installed based on the instructions in this article or if the folder structures has changed.
+
+**SLS**
+
 Ensure to obtain the sls registration key and the sls certicicate. You can follow the instruction [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/05-mas-slscfg.md) to obtain the same. There should 2 files as follows under /mas-suite-install/keyfiles directory each containing the values accordingly.
 
 - sls-registration-key
 - sls.crt
 
 Update the two files.
+
+**MongoDB**
 
 Ensure to copy the mongoDB certificate to a new file named mongo.crt under /keyfiles/. (./keyfiles/mongo.crt). Replace if it exists. Read more about Mongo security [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/mongo/Mongo-Enable-SSL-TLS.md) <br>
 Note thr MongoDB user name and password. <br>
@@ -269,6 +286,15 @@ Note the Db2 user name and password. <br>
 Navigate to mas-suite-install/05-mas-init
 
 **Setup Initialization**
+
+**Note:**
+
+- Extracts the SLS certificate to ../keyfiles/sls.crt.
+- Extracts the SLS registration key to ../keyfiles/sls-registration-key.
+- Updates 06-sls-cfg.yaml with the SLS URL and the SLS certificate.
+- Updates 08-mongo-cfg.yaml with the hostname and the Mongo certificate from ../keyfiles/mongo.crt.
+- Populates the JDBC URL in 10-jdbc-cfg-db2.yaml and 10-jdbc-cfg-oracle.yaml.
+- Sets the domain in 15-masinstall.yaml to the hostname.
 
 ```CMD
 ./00-mas-install-init.sh
@@ -376,8 +402,11 @@ oc apply -f 14-cluster-role-core-internalapi.yml
 
 Read More about Maximo Application Suite Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/08-mas-install.md)
 
+**Note:**
+Ensure the domain name is rightly set.
+
 Execute the following commands:
 
 ```CMD
-oc apply -f 115-masinstall.yaml
+oc apply -f 15-masinstall.yaml
 ```
