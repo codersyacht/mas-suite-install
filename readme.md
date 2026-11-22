@@ -4,6 +4,8 @@
 
 This document illustrates Operator Hub based installation of Maximo Application Suite including manual installation of all the integration components.
 
+**Disclaimer:** This not official IBM documentation. It is only meant for self learning.
+
 ```mermaid
 flowchart LR
     subgraph MAS["MAS cluster"]
@@ -253,7 +255,7 @@ oc apply -f 05-ibm-marketplaceconfig.yaml
 ```
 
 ```CMD
-oc apply -f 04-ibm-metrics-subscription.yaml.yaml
+oc apply -f 04-ibm-metrics-subscription.yaml
 ```
 
 ### Maximo Application Suite Installation
