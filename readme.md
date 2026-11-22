@@ -133,27 +133,24 @@ Execute the following command:
 oc apply -f 01-ibm-operator-catalogsource.yaml
 ```
 
-### Common Services Operators Installation
+### Certificate Manager Operator Installation
 
-Read More about Common Service Operator Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/02-common-services-operators-installation.md)
+Read More about Certificate Manager Operator Installation [here]()
 
-Navigate to mas-suite-install/02-common-services
+Navigate to mas-suite-install/02-cert-manager
 
 Execute the following command:
 
 ```CMD
-./01-create-ibm-common-services-project.sh
+./01-create-cert-manager-project.sh
 ```
 
 ```CMD
-oc apply -f 02-ibm-common-services-operatorgroup.yaml
+oc apply -f 02-cert-manager-operatorgroup.yaml
 ```
 
 ```CMD
-oc apply -f 03-ibm-common-services-subscription.yaml
-```
-```CMD
-oc apply -f 04-ibm-cert-manager-operandrequest.yaml
+oc apply -f 03-cert-manager-subscription.yaml
 ```
 
 ### SLS Installation
