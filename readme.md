@@ -233,7 +233,7 @@ Execute the following commands:
 ```
 
 ```CMD
-02-ibm-metric-entitlement-key.sh
+./02-ibm-metric-entitlement-key.sh
 ```
 
 ```CMD
@@ -242,7 +242,7 @@ oc apply -f 03-ibm-metrics-operatorgroup.yaml
 
 **Note:**
 
-Edit the version in the 04-ibm-metrics-subscription.yaml & 04-ibm-metrics-subscription.yaml acordingly. The version here is v2.24.11.
+Edit the versions in the 04-ibm-metrics-subscription.yaml & 04-ibm-metrics-subscription.yaml acordingly. The used version here is v2.24.11.
 
 ```CMD
 oc apply -f 04-ibm-metrics-subscription.yaml
