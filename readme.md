@@ -241,7 +241,7 @@ oc apply -f 06-ibm-data-reporter-subscription.yaml
 
 ### Maximo Application Suite Installation
 
-Read More about MAS Operator Installation [here](https://github.ibm.com/maximo-application-suite/knowledge-center/blob/main/devops/maximo/mas-suite-install/04-mas-operator-installation.md)
+Read More about MAS Operator Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/04-mas-operator-installation.md)
 
 **Prerequisite**
 
