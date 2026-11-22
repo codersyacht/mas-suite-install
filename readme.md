@@ -373,9 +373,6 @@ Execute the following command for DB2:
 ./09-ibm-mas-jdbc-credentials-db2.sh
 ```
 
-## Conclusion
-
-Post installation, all the routes will be available in the OpenShift Routes. Access the MAS admin and login with super user. Super user credentials will be avialable in the mas suite namespace secrets.
 ```CMD
 oc apply -f 10-jdbc-cfg-db2.yaml
 ```
@@ -410,3 +407,7 @@ Execute the following commands:
 ```CMD
 oc apply -f 15-masinstall.yaml
 ```
+
+## Conclusion
+
+Post installation, all the routes will be available in the OpenShift Routes. Access the MAS admin and login with super user. Super user credentials will be avialable in the mas suite namespace secrets.
