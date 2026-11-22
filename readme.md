@@ -329,6 +329,24 @@ Execute the following command:
 oc apply -f 10-JdbcCfg.yaml
 ```
 
+**Cluster Role Settings**
+
+```CMD
+oc apply -f  11-clusterissuer.yaml
+```
+
+```CMD
+oc apply -f 12-cluster-role-core-coreapi.yml
+```
+
+```CMD
+oc apply -f 13-cluster-role-core-entitymgr-suite.yml
+```
+
+```CMD
+oc apply -f 14-cluster-role-core-internalapi.yml
+```
+
 **Maximo Application Suite Core Installation**
 
 Read More about Maximo Application Suite Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/08-mas-install.md)
@@ -336,5 +354,5 @@ Read More about Maximo Application Suite Installation [here](https://github.com/
 Execute the following commands:
 
 ```CMD
-oc apply -f 11-MasInstall.yaml
+oc apply -f 115-masinstall.yaml
 ```
