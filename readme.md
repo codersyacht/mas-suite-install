@@ -137,7 +137,7 @@ oc apply -f 01-ibm-operator-catalogsource.yaml
 
 ### Certificate Manager Operator Installation
 
-Read More about Certificate Manager Operator Installation [here]()
+Read More about Certificate Manager Operator Installation [here](https://github.com/codersyacht/maximo-knowledge-center/blob/main/devops/maximo/mas-suite-install%20/02-cert-manager-operator-installation.md)
 
 Navigate to mas-suite-install/02-cert-manager
 
